@@ -156,11 +156,21 @@ function updateScore(result) {
   liveScore.innerText = `${playerScore} - ${comScore}`;
 }
 
+function displayFinalResult() {
+  const final_result = document.querySelector("#result");
+  if (playerScore > comScore) {
+    final_result.innerText = "You won!";
+  } else {
+    final_result.innerText = "You lost!";
+  }
+}
+
 function endGame() {
   const buttons = document.querySelectorAll("button");
   buttons.forEach((button) => {
     button.disabled = true;
   });
+  displayFinalResult();
 
   // location.reload();
   // setTimeout(500);
