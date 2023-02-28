@@ -1,0 +1,28 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.player-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  height: 300px;
+}
+
+.option-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.player-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
